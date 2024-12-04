@@ -8,7 +8,8 @@ import java.util.Map;
 
 /**
  * Concrete strategy for PayPal payment.
- * Extracted the payment logic from Order and encapsulated it in separate classes (PayPalPayment and CreditCardPayment).
+ * Extracted the payment logic from Order and
+ * encapsulated it in separate classes (PayPalPayment and CreditCardPayment).
  */
 public class PayPalPayment implements PaymentStrategy {
     private static final Map<String, String> PAYPAL_DATA_BASE = new HashMap<>();
@@ -29,7 +30,7 @@ public class PayPalPayment implements PaymentStrategy {
             String password = reader.readLine();
             if (email.equals(PAYPAL_DATA_BASE.get(password))) {
                 signedIn = true;
-                System.out.println("Paying " + amount + " using PayPal.");
+                System.out.println("Paying " + amount + "Euros using PayPal.");
                 return true;
             } else {
                 System.out.println("Invalid PayPal credentials.");

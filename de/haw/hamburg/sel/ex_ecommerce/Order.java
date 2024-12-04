@@ -2,7 +2,8 @@ package de.haw.hamburg.sel.ex_ecommerce;
 
 /**
  * Order class with strategy-based payment.
- * made the Order class agnostic to specific payment methods, enabling it to work with any strategy that implements PaymentStrategy.
+ * made the Order class agnostic to specific payment methods
+ * enabling it to work with any strategy that implements PaymentStrategy.
  */
 public class Order {
     private int totalCost = 0;
